@@ -1,6 +1,6 @@
 ![Logo](https://raw.githubusercontent.com/ben-maclaurin/elde/main/logo.png)
 
-Elde: a tiny, minimal static site generator for Emacs Org-mode users. Heavily inspired by [Jekyll](https://jekyllrb.com/).
+Elde: a tiny, minimal static site generator for Emacs [Org Mode](https://orgmode.org/) users. Heavily inspired by [Jekyll](https://jekyllrb.com/).
 
 Why? To scratch a personal itch. Currently a WIP project. 
 
