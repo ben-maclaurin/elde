@@ -14,7 +14,7 @@ Then, in the project root:
 cargo run
 ```
 
-This will generate `static` and `org`. Elde will watch `org` for changes and the output will be written to `static`.
+This will generate `/static` and `/org`. Elde will watch `/org` for changes and the output will be exported to `/static`.
 
 I do plan to make a binary available here soon.
 
