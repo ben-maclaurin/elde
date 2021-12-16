@@ -1,13 +1,16 @@
 mod transform;
 
+use colored::Colorize;
 use notify::{watcher, RecursiveMode, Watcher};
 use std::sync::mpsc::channel;
 use std::time::Duration;
 use transform::update;
-use colored::Colorize;
 
 fn main() {
-    println!("{}", "[watch] Elde started, watching for changes in /org ...".bright_magenta());
+    println!(
+        "{}",
+        "[watch] Elde started, watching for changes in /org ...".bright_magenta()
+    );
 
     let (tx, rx) = channel();
 

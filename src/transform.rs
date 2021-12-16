@@ -1,3 +1,4 @@
+use colored::Colorize;
 use std::ffi::OsStr;
 use std::fs;
 use std::fs::File;
@@ -5,10 +6,17 @@ use std::io::prelude::*;
 use std::path::Path;
 use std::path::PathBuf;
 use std::process::Command;
-use colored::Colorize;
 
 pub fn update(buf: PathBuf) {
-    println!("{}", ["[info] Org directory updated, fetching changes at", buf.as_path().to_str().unwrap()].join(" ").bright_cyan());
+    println!(
+        "{}",
+        [
+            "[info] Org directory updated, fetching changes at",
+            buf.as_path().to_str().unwrap()
+        ]
+        .join(" ")
+        .bright_cyan()
+    );
 
     let e = OsStr::new("org");
 
