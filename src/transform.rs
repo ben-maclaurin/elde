@@ -40,7 +40,7 @@ fn write(path: &Path, contents: String) -> std::io::Result<()> {
     let transformed_contents = [
         "#+OPTIONS: html-postamble:nil\n
         #+OPTIONS: toc:nil\n
-        #+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"https://unpkg.com/sakura.css/css/sakura-earthly.css\" />\n
+        #+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"https://unpkg.com/sakura.css/css/sakura-ink.css\" />\n
         #+OPTIONS: html-style:nil\n
         #+OPTIONS: num:nil"
             .to_owned(),
