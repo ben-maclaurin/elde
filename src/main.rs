@@ -5,8 +5,11 @@ use notify::{watcher, RecursiveMode, Watcher};
 use std::sync::mpsc::channel;
 use std::time::Duration;
 use transform::update;
+use std::fs;
 
 fn main() {
+    init();
+
     println!(
         "{}",
         "[watch] Elde started, watching for changes in /org ...".bright_magenta()
@@ -30,4 +33,11 @@ fn main() {
             Err(e) => println!("Error trying to watch event ..."),
         };
     }
+}
+
+fn init() -> std::io::Result<()> {
+    fs::create_dir_all("org")?;
+    fs::create_dir_all("static")?;
+
+    Ok(())
 }
